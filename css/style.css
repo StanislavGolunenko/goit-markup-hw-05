@@ -848,7 +848,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* модалка */
 .modal-window {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -865,24 +865,22 @@ h1,h2,h3,h4,h5,h6,p {
   padding: 72px 24px 24px 24px;
 }
 
-/* кнопка закрытия */
 .modal-close {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 24px;   /* отступ сверху */
+  right: 24px; /* отступ справа */
   width: 24px;
   height: 24px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e7e9fc;
+  border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
+  background-color: #ffffff;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0;
 }
+
 .modal-close:hover,
 .modal-close:focus {
   background-color: #404bbf;
@@ -902,10 +900,11 @@ h1,h2,h3,h4,h5,h6,p {
 .modal-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 150%;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--title-color, #2e2f42);
+  text-align: center;
+  color: #2e2f42;
   margin-bottom: 16px;
 }
 
