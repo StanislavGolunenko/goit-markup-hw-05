@@ -987,6 +987,7 @@ h1,h2,h3,h4,h5,h6,p {
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .form-textarea:focus {
   border-color: #4d5ae5;
 }
@@ -995,11 +996,13 @@ h1,h2,h3,h4,h5,h6,p {
 .form-checkbox {
   margin-bottom: 24px;
 }
+
 .checkbox-input.visually-hidden {
   position: absolute;
   opacity: 0;
   pointer-events: none;
 }
+
 .checkbox-label {
   font-size: 12px;
   line-height: 1.17;
@@ -1009,6 +1012,7 @@ h1,h2,h3,h4,h5,h6,p {
   align-items: center;
   gap: 8px;
 }
+
 .checkbox-custom {
   width: 16px;
   height: 16px;
@@ -1076,8 +1080,7 @@ h1,h2,h3,h4,h5,h6,p {
               0px 2px 1px rgba(0,0,0,0.2);
   border-radius: 4px;
   z-index: 1000;  /* выше overlay */
-  
-   margin-top: 72px; /* смещение вниз */
+  margin-top: 72px; /* смещение вниз */
   margin-bottom: 24px; /* отступ снизу */
 }
 
