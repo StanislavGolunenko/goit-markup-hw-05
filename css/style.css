@@ -698,9 +698,8 @@ h1,h2,h3,h4,h5,h6,p {
 
 .footer-flex {
   display: flex;
-  justify-content: flex-start; /* или space-between, если нужно разнести блоки по краям */
-   align-items: baseline;
-  gap: 40px; /* расстояние между блоками */
+  justify-content: flex-start; 
+  gap: 40px;
 }
 
 .container footer-flex {
@@ -861,18 +860,18 @@ h1,h2,h3,h4,h5,h6,p {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* добавляем центрирование элементов */
+ 
   display: flex;
-  flex-direction: column; /* вертикальное расположение */
-  align-items: center;    /* по горизонтали */
-  justify-content: center; /* по вертикали */
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center; 
   
 }
 
 .modal-close {
   position: absolute;
-  top: 24px;   /* отступ сверху */
-  right: 24px; /* отступ справа */
+  top: 24px;   
+  right: 24px;
   width: 24px;
   height: 24px;
   display: flex;
@@ -939,13 +938,13 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .form-input {
-  width: 360px;        /* ширина поля */
-  height: 40px;        /* высота поля */
+  width: 360px;       
+  height: 40px;        
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  padding-left: 38px;  /* чтобы иконка не наслаивалась */
+  padding-left: 38px; 
   outline: none;
-  box-sizing: border-box; /* важно для точного размера */
+  box-sizing: border-box; 
   background-color: transparent;
 }
 
@@ -1065,9 +1064,9 @@ h1,h2,h3,h4,h5,h6,p {
 
 .modal-form input,
 .modal-form textarea {
-  width: 100%; /* вместе с box-sizing будет правильно */
-  padding-left: 24px;  /* внутренний отступ слева */
-  padding-right: 24px; /* внутренний отступ справа */
+  width: 100%; 
+  padding-left: 24px; 
+  padding-right: 24px; 
 }
 
 .modal-content {
@@ -1077,14 +1076,14 @@ h1,h2,h3,h4,h5,h6,p {
   transform: translate(-50%, -50%);
   width: 408px;
   min-height: 584px;
-  background: #fcfcfc;   /* белое окно */
+  background: #fcfcfc;  
   box-shadow: 0px 1px 1px rgba(0,0,0,0.14),
               0px 1px 3px rgba(0,0,0,0.12),
               0px 2px 1px rgba(0,0,0,0.2);
   border-radius: 4px;
-  z-index: 1000;  /* выше overlay */
-  margin-top: 72px; /* смещение вниз */
-  margin-bottom: 24px; /* отступ снизу */
+  z-index: 1000;  
+  margin-top: 72px; 
+  margin-bottom: 24px; 
 }
 
 .modal-form input,
@@ -1094,13 +1093,13 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .modal-overlay {
-  position: fixed;     /* фиксируем на экране */
+  position: fixed;     
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2e2f42; /* полностью непрозрачный фон */
-  z-index: 999;        /* выше всего контента на странице */
+  background-color: #2e2f42; 
+  z-index: 999;        
 }
 
 
