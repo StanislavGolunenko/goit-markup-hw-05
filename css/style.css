@@ -774,10 +774,10 @@ h1,h2,h3,h4,h5,h6,p {
   color: #ffffff;
 }
 
-/* Форма */
 .subscribe-form {
   display: flex;
-  gap: 24px;
+  align-items: center;   /* выравниваем по центру вертикали */
+  gap: 16px;
 }
 
 /* Label */
@@ -804,28 +804,52 @@ h1,h2,h3,h4,h5,h6,p {
   color: #ffffff;
 }
 
-/* Кнопка */
 .subscribe-btn {
-  min-width: 165px;
-  height: 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #4D5AE5;
+  justify-content: center;
+  gap: 8px; 
+  padding: 0 16px;
+  height: 40px;
   border: none;
   border-radius: 4px;
+  background-color: #4d5ae5;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1; 
+  margin-top: 0;
 }
 
 /* Иконка */
 .subscribe-icon {
   margin-left: 16px;
+}
+
+.subscribe-form {
+  display: flex;            
+  align-items: center;     
+  gap: 16px;                
+}
+
+.subscribe-input {
+  width: 264px;         
+  height: 40px;     
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  
+}
+
+
+
+.subscribe-btn:hover {
+  background-color: #404bbf;
+}
+
+.subscribe-text {
+  display: inline-block;
 }
 
 
